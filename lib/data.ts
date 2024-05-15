@@ -1,10 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import aedu from "@/public/images/aedu.webp";
-import aedu_gif from "@/public/images/aedu-gif.gif";
-import creo from "@/public/images/creo-defi.webp";
 import hris from "@/public/images/hris.webp";
 import marketplace from "@/public/images/marketplace.webp";
 import undangan_digital from "@/public/images/undangan digital.webp";
@@ -15,8 +11,13 @@ import onlineshop from "@/public/images/hefa store.webp";
 import netflix from "@/public/images/netflix.webp";
 import movieapp from "@/public/images/movie-app.webp";
 import aeduapp from "@/public/images/mobile-aedu.webp";
-import hotel from "@/public/images/hotel.webp";
 import receipe from "@/public/images/receipe.png";
+import memomoo from "@/public/images/image1.png";
+import smartcourier from "@/public/images/image2.png";
+import dnmmobile from "@/public/images/image3.png";
+import movi from "@/public/images/image4.png";
+import maca from "@/public/images/image5.png";
+import mydoctor from "@/public/images/image6.png";
 
 export const links = [
   {
@@ -83,145 +84,73 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Learning Course",
+    title: "MemoMoo",
     description:
-      "Online course website offers easy access to a variety of courses. Users can learn through videos, readings, and exams on topics ranging from technical skills to soft skills.",
-    tags: ["Next.js 13", "Tailwind", "Typescript", "React Query"],
-    imageUrl: aedu,
-    url: "https://learning.aedu.id",
-    gif: aedu_gif
+      "A reminder application for fellow employees in a company place, you can also see other holidays and you can also make notes in it.",
+    tags: ["Android", "Material Design", "Java", "Firebase", "Facebook Auth", "Google Auth"],
+    imageUrl: memomoo,
+    url: "https://play.google.com/store/apps/details?id=com.memomoo.mobile_prog2.apps",
   },
   {
-    title: "Nginep",
+    title: "Smart Courier",
     description:
-      "Explore the world with our hotel booking platform inspired by Airbnb! Easily book accommodation, manage personalized trips and more",
+      "A application for courier needs in delivering packages and supports the courier's work to save signatures and photos of package recipients.",
     tags: [
-      "TypeScript",
-      "Next.js",
-      "Prisma",
-      "Mongo DB",
+      "React Native",
+      "Native Base UI",
+      "SQLite",
+      "Redux",
+      "Google Map API",
+    ],
+    imageUrl: smartcourier,
+    url: "https://play.google.com/store/apps/details?id=com.smartcourier",
+  },
+ 
+  {
+    title: "DNM Mobile",
+    description:
+      "Is an online shopping application for K-Link customers and members and makes it easy for members to buy all K-Link products.",
+    tags: [
+      "React Native",
       "Tailwind",
       "Zustand",
+      "React Query",
+      "React Hook Form",
+      "Sentry",
     ],
-    imageUrl: hotel,
-    url: "https://amienul-nginep.vercel.app/",
+    imageUrl: dnmmobile,
+    url: "https://play.google.com/store/apps/details?id=com.klink.kmart",
+  },
+  {
+    title: "Movi App",
+    description:
+      "A application to find out what films and TV shows are the latest and most popular, we can also see trailers, teasers and all the cast.",
+    tags: ["React Native", "Material Design", "Redux", "Firebase", "TMDB API"],
+    imageUrl: movi,
+    url: "https://play.google.com/store/apps/details?id=com.moviesdaily",
   },
  
   {
-    title: "Creo Defi",
+    title: "Maca App",
     description:
-      "The dApp website offers staking, airdrop participation, token swapping, and an NFT builder for quick and versatile decentralized financial and non-fungible token activities.",
-    tags: [
-      "TypeScript",
-      "Next.js",
-      "Tailwind",
-      "Wagmi",
-      "Thirdweb",
-      "RainbowKit",
-    ],
-    imageUrl: creo,
-    url: "https://creo-defi.vercel.app/",
-  },
-  {
-    title: "App aedu+",
-    description:
-      "This application is the result of the transformation of the 3 website menus above (learning, community, enterprise), all the features on the website are also in this application",
-    tags: ["React Native", "Expo", "Javasciprt", "Css"],
-    imageUrl: aeduapp,
-    url: "https://expo.dev/accounts/amienulrana/projects/aedu-plus/builds/c32d6b4f-b7d8-41ff-acb7-b6ebd2523479",
-  },
- 
-  {
-    title: "Movie App",
-    description:
-      "This app you can browse trending, upcoming and top rated movies, you can see the details of a movie and the cast person, and you can even search any movie you want.",
+      "Maca is an application to read the latest news from various trusted sources and various news categories such as sports, politics, science, and others.",
     tags: [
       "React Native",
-      "Javascript",
-      "Tailwind",
-      "Nativewind",
-      "TMDB"
+      "React Native Paper",
+      "Zustand",
+      "Firebase",
+      "NewsData API"
     ],
-    imageUrl: movieapp,
-    url: "https://expo.dev/accounts/amienulrana/projects/app-ui/builds/73b3a127-9092-431b-8de6-9368860f84e3",
+    imageUrl: maca,
+    url: "https://play.google.com/store/apps/details?id=com.rukysektiawan.appnews",
   },
   {
-    title: "HRIS Management",
+    title: "My Doctor",
     description:
-      "The HRIS management website simplifies HR tasks, including payslip generation, attendance tracking, and leave management for efficient human resource operations.",
-    tags: ["Vue 3", "Vuex", "Express Js", "Tailwind", "Mongo DB"],
-    imageUrl: hris,
-    url: "https://mufidahgroup.com/",
-  },
-  {
-    title: "Recipe App",
-    description:
-      "From quick and easy weekday meals to impressive gourmet dishes, this app provides step-by-step instructions, ingredient lists, and stunning visuals to guide you through each culinary adventure. ",
-    tags: [
-      "React Native",
-      "Javascript",
-      "Tailwind",
-      "Nativewind",
-      "Themealdb"
-    ],
-    imageUrl: receipe,
-    url: "https://amienulrana.vercel.app/notfound",
-  },
-  {
-    title: "Netflix Clone",
-    description:
-      "cloned netflix website with several features, namely, auth with github and google, watch videos, and like videos",
-    tags: ["Next.js", "Prisma", "Typescript", "Tailwind", "Mongo DB"],
-    imageUrl: netflix,
-    url: "https://movie-app-amienul.vercel.app",
-  },
-  {
-    title: "Marketplace",
-    description:
-      "The integrated marketplace website features seamless Raja Ongkir integration, allowing users to easily check shipping costs for their purchases. and dashboard to create product",
-    tags: ["Vue 3", "Vuex", "Express Js", "Tailwind", "Mongo DB"],
-    imageUrl: marketplace,
-    url: "https://marketplace-one-blue.vercel.app/",
-  },
-  {
-    title: "Car Rental",
-    description:
-      "The personal project car rental website offers a simplified platform for renting cars, catering to individual needs.",
-    tags: ["Next.js 13", "Typescript", "Tailwind", "Headless UI"],
-    imageUrl: car_rentalv2,
-    url: "https://cars-rental-v2-amienulrana.vercel.app/",
-  },
-  {
-    title: "Invitation Digital",
-    description:
-      "The digital invitation website allows quick guest check-ins through scanning, providing administrators with instant access to arrival information.",
-    tags: ["React", "React router", "Express Js", "Mongo DB", "Reactstrap"],
-    imageUrl: undangan_digital,
-    url: "https://amienulrana.vercel.app/notfound",
-  },
-  {
-    title: "Topup Game",
-    description:
-      "This personal project involves the creation of a game top-up website designed for simulation purposes. Users can experience the process of buying game vouchers in a simulated environment.",
-    tags: ["Next.js", "Typescript", "Express Js", "Mongo DB", "CSS"],
-    imageUrl: topupgame,
-    url: "https://topupgame-pearl.vercel.app/",
-  },
-  {
-    title: "Furniture Landing Page",
-    description:
-      "The personal project furniture landing page is a visually appealing website showcasing a diverse range of furniture products.",
-    tags: ["HTML", "CSS", "Javascript", "Tailwind"],
-    imageUrl: landingpage,
-    url: "https://amienulrana.github.io/companyprofile",
-  },
-  {
-    title: "Online Shop",
-    description:
-      "online shop personal website as an exercise in creating a website using the latest bootstrap",
-    tags: ["HTML", "CSS", "Javascript", "Bootstrap"],
-    imageUrl: onlineshop,
-    url: "https://amienulrana.github.io/hefa-store/",
+      "Application to consult your favorite doctor easily. this is a course app from BuildwithAngga with Fullstack React Native Developer course.",
+    tags: ["React Native", "Material Design", "Firebase", "Redux"],
+    imageUrl: mydoctor,
+    url: "https://play.google.com/store/apps/details?id=com.mydoctor.rukysektiawan",
   },
 ] as const;
 

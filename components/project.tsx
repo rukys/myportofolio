@@ -44,11 +44,11 @@ export default function Project({
           <Image
             src={imageUrl}
             alt="Project I worked on"
-            quality={95}
-            className="w-full h-[200px] mb-5 rounded-lg shadow-2xl transition"
+            quality={100}
+            className="w-full h-[300px] mb-5 rounded-lg shadow-2xl transition"
           />
           <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed h-[150px] overflow-hidden mb-5 text-gray-700 dark:text-white/70">
+          <p className="mt-2 leading-relaxed h-[125px] overflow-hidden mb-5 text-gray-700 dark:text-white/70">
             {description}
           </p>
           <ul className="flex flex-wrap gap-2 sm:mt-auto">
@@ -62,24 +62,6 @@ export default function Project({
             ))}
           </ul>
         </div>
-
-        {/* <Image
-          src={imageUrl}
-          alt="Project I worked on"
-          quality={95}
-          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
-        transition 
-        group-hover:scale-[1.04]
-        group-hover:-translate-x-3
-        group-hover:translate-y-3
-        group-hover:-rotate-2
-
-        group-even:group-hover:translate-x-3
-        group-even:group-hover:translate-y-3
-        group-even:group-hover:rotate-2
-
-        group-even:right-[initial] group-even:-left-40"
-        /> */}
       </Link>
     </motion.div>
   );
