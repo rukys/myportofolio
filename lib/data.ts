@@ -1,17 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
-import hris from "@/public/images/hris.webp";
-import marketplace from "@/public/images/marketplace.webp";
-import undangan_digital from "@/public/images/undangan digital.webp";
-import car_rentalv2 from "@/public/images/car-rental-v2.webp";
-import topupgame from "@/public/images/topupgame.webp";
-import landingpage from "@/public/images/landing page property.webp";
-import onlineshop from "@/public/images/hefa store.webp";
-import netflix from "@/public/images/netflix.webp";
-import movieapp from "@/public/images/movie-app.webp";
-import aeduapp from "@/public/images/mobile-aedu.webp";
-import receipe from "@/public/images/receipe.png";
 import memomoo from "@/public/images/image1.png";
 import smartcourier from "@/public/images/image2.png";
 import dnmmobile from "@/public/images/image3.png";
