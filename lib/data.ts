@@ -7,6 +7,7 @@ import dnmmobile from "@/public/images/image3.png";
 import movi from "@/public/images/image4.png";
 import maca from "@/public/images/image5.png";
 import mydoctor from "@/public/images/image6.png";
+import recipely from "@/public/images/image7.png";
 
 export const links = [
   {
@@ -118,21 +119,6 @@ export const projectsData = [
     imageUrl: movi,
     url: "https://play.google.com/store/apps/details?id=com.moviesdaily",
   },
- 
-  {
-    title: "Maca App",
-    description:
-      "Maca is an application to read the latest news from various trusted sources and various news categories such as sports, politics, science, and others.",
-    tags: [
-      "React Native",
-      "React Native Paper",
-      "Zustand",
-      "Firebase",
-      "NewsData API"
-    ],
-    imageUrl: maca,
-    url: "https://play.google.com/store/apps/details?id=com.rukysektiawan.appnews",
-  },
   {
     title: "My Doctor",
     description:
@@ -140,6 +126,21 @@ export const projectsData = [
     tags: ["React Native", "Material Design", "Firebase", "Redux"],
     imageUrl: mydoctor,
     url: "https://play.google.com/store/apps/details?id=com.mydoctor.rukysektiawan",
+  },
+  {
+    title: "Recipely",
+    description:
+      "Recipely is a daily cooking app that will become your kitchen assistant! With Recipely, you can explore various recipes from around the world, find inspiration for daily meals, and learn how to cook with ease",
+    tags: [
+      "React Native",
+      "React Query",
+      "Zustand",
+      "Firebase",
+      "Node JS",
+      "Express",
+    ],
+    imageUrl: recipely,
+    url: "https://play.google.com/store/apps/details?id=com.recipely",
   },
 ] as const;
 

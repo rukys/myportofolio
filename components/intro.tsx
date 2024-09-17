@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { BsArrowRight } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 
 import { useSectionInView } from "@/lib/hooks";
@@ -69,13 +69,13 @@ export default function Intro() {
         {language === 'EN' ? (
           <>
           <span className="font-bold" >Hello, I'm Ruky Sektiawan. </span>
-          <span className="font-normal">I'm a Mobile Developer and Mobile Design Enthusiast </span>
+          <span className="font-normal">I'm a Mobile Developer Expertise and Mobile Design Enthusiast </span>
           <span className="font-normal">based in Bekasi</span>
           </>
           ) : (
             <>
             <span className="font-bold">Halo, saya Ruky Sektiawan. </span>
-            <span className="font-normal">Saya Seorang Mobile Developer dan Mobile Design Antusias </span>
+            <span className="font-normal">Saya Seorang Mobile Developer Expert dan Mobile Design Antusias </span>
             <span className="font-normal">tinggal di Bekasi</span>
           </>
         )}
