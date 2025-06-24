@@ -187,7 +187,7 @@ const EN = {
   CONTACT_ME: "Contact me here",
   ABOUT_ME: "About me",
   ABOUT_ME_DESC:
-  "As a mobile developer with 5 years of experience, I am skilled in several modern technologies, including Java, Kotlin, Swift, JavaScript, React and React Native. I am also proficient in Dart and have experience with Flutter for other language in developing mobile. I am passionate about creating user-friendly and intuitive interfaces that enhance the user experience. I am always looking to learn new technologies. I am currently looking for a full-time position as a Mobile Developer.",
+  "I’m a mobile developer with over 5 years of experience crafting modern, scalable apps using React Native. I focus on building clean, responsive, and high-performance applications backed by solid tools like Zustand, Redux, Tailwind CSS, Firebase, Supabase, and MySQL. I’ve worked on various projects—from logistics and membership apps to movie and recipe platforms—delivering both functionality and great user experience. I’m also comfortable working with React.js, Next.js, and Laravel for full-stack development. Always eager to learn and collaborate on meaningful projects. Let’s build something awesome together.",
   MY_PROJECT: 'My Projects',
   PROJECT: {
     COURSE_DESC: 'Online course website offers easy access to a variety of courses. Users can learn through videos, readings, and exams on topics ranging from technical skills to soft skills.'
