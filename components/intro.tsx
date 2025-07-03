@@ -37,11 +37,11 @@ export default function Intro() {
             <Image
               src="/myphoto.webp"
               alt="Ricardo portrait"
-              width="192"
-              height="192"
-              quality="95"
+              width="200"
+              height="200"
+              quality="100"
               priority={true}
-              className="h-36 w-36 mb-2 rounded-full object-cover border-[0.20rem] border-white shadow-xl"
+              className="h-48 w-48 mb-4 mt-2 rounded-full object-cover border-[0.20rem] border-white shadow-xl"
             />
           </motion.div>
 
@@ -69,13 +69,13 @@ export default function Intro() {
         {language === 'EN' ? (
           <>
           <span className="font-bold" >Hello, I'm Ruky Sektiawan. </span>
-          <span className="font-normal">I'm a Mobile Developer Expertise and Mobile Design Enthusiast </span>
+          <span className="font-normal">I'm a Mobile Developer Expertise </span>
           <span className="font-normal">based in Bekasi</span>
           </>
           ) : (
             <>
             <span className="font-bold">Halo, saya Ruky Sektiawan. </span>
-            <span className="font-normal">Saya Seorang Mobile Developer Expert dan Mobile Design Antusias </span>
+            <span className="font-normal">Saya Seorang Mobile Developer Expert </span>
             <span className="font-normal">tinggal di Bekasi</span>
           </>
         )}

@@ -5,9 +5,10 @@ import memomoo from "@/public/images/image1.png";
 import smartcourier from "@/public/images/image2.png";
 import dnmmobile from "@/public/images/image3.png";
 import movi from "@/public/images/image4.png";
-import maca from "@/public/images/image5.png";
+// import maca from "@/public/images/image5.png";
 import mydoctor from "@/public/images/image6.png";
-import recipely from "@/public/images/image7.png";
+// import recipely from "@/public/images/image7.png";
+import recipelyApp from "@/public/images/image8.png";
 
 export const links = [
   {
@@ -105,7 +106,7 @@ export const projectsData = [
       "Tailwind",
       "Zustand",
       "React Query",
-      "React Hook Form",
+      "Firebase",
       "Sentry",
     ],
     imageUrl: dnmmobile,
@@ -114,8 +115,8 @@ export const projectsData = [
   {
     title: "Movi App",
     description:
-      "A application to find out what films and TV shows are the latest and most popular, we can also see trailers, teasers and all the cast.",
-    tags: ["React Native", "Material Design", "Redux", "Firebase", "TMDB API"],
+      "A application to find out what films shows are the latest and most popular, we can also see trailers, teasers and all the cast.",
+    tags: ["React Native", "Firebase", "TMBD API", "Tailwind", "Zustand", "React Query"],
     imageUrl: movi,
     url: "https://play.google.com/store/apps/details?id=com.moviesdaily",
   },
@@ -139,7 +140,7 @@ export const projectsData = [
       "Node JS",
       "Express",
     ],
-    imageUrl: recipely,
+    imageUrl: recipelyApp,
     url: "https://play.google.com/store/apps/details?id=com.recipely",
   },
 ] as const;
@@ -169,6 +170,8 @@ export const skillsData = [
   "PHP",
   "Laravel",
   "MySQL",
+  "Sentry",
+  "Stallion",
 ] as const;
 
 const ID = {
@@ -187,7 +190,7 @@ const EN = {
   CONTACT_ME: "Contact me here",
   ABOUT_ME: "About me",
   ABOUT_ME_DESC:
-  "I’m a mobile developer with over 5 years of experience crafting modern, scalable apps using React Native. I focus on building clean, responsive, and high-performance applications backed by solid tools like Zustand, Redux, Tailwind CSS, Firebase, Supabase, and MySQL. I’ve worked on various projects—from logistics and membership apps to movie and recipe platforms—delivering both functionality and great user experience. I’m also comfortable working with React.js, Next.js, and Laravel for full-stack development. Always eager to learn and collaborate on meaningful projects. Let’s build something awesome together.",
+  "I’m a mobile developer with over 5 years of experience crafting modern, scalable apps using React Native. I focus on building clean, responsive, and high-performance applications backed by solid tools like Zustand, Redux, Tailwind CSS, Firebase, Supabase, and MySQL. I’ve worked on various projects from logistics and membership apps to movie and recipe platforms—delivering both functionality and great user experience. I’m also comfortable working with React.js, Next.js, and Laravel for full-stack development. Always eager to learn and collaborate on meaningful projects. Let’s build something awesome together.",
   MY_PROJECT: 'My Projects',
   PROJECT: {
     COURSE_DESC: 'Online course website offers easy access to a variety of courses. Users can learn through videos, readings, and exams on topics ranging from technical skills to soft skills.'

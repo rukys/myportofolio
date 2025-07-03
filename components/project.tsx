@@ -32,19 +32,20 @@ export default function Project({
         scale: scaleProgess,
         opacity: opacityProgess,
       }}
-      className="group mb-3 sm:mb-8 last:mb-0"
+      className="mb-3 group sm:mb-8 last:mb-0"
     >
       <Link
         href={url}
         rel="noreferrer"
         target="_blank"
-        className="bg-gray-100 block border border-black/5 rounded-lg relative h-auto hover:bg-gray-200 transition dark:text-white dark:bg-white/10 dark:hover:bg-white/20"
+        className="relative block h-auto transition bg-gray-100 border rounded-lg border-black/5 hover:bg-gray-200 dark:text-white dark:bg-white/10 dark:hover:bg-white/20"
       >
-        <div className="pt-4 pb-7 px-5 sm:pt-10 flex flex-col h-full">
+        <div className="flex flex-col h-full px-5 pt-4 pb-7 sm:pt-10">
           <Image
             src={imageUrl}
             alt="Project I worked on"
             quality={100}
+            objectFit="cover"
             className="w-full h-[300px] mb-5 rounded-lg shadow-2xl transition"
           />
           <h3 className="text-2xl font-semibold">{title}</h3>

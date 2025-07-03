@@ -8,8 +8,8 @@ import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
 import { useLanguageContext } from "@/context/language-context";
-import { FaGithubSquare, FaWhatsapp, FaWhatsappSquare } from "react-icons/fa";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { FaTiktok, FaWhatsappSquare } from "react-icons/fa";
+import { BsLinkedin } from "react-icons/bs";
 import { TYPHOGRAPHY } from "@/lib/data";
 
 export default function Contact() {
@@ -93,7 +93,8 @@ export default function Contact() {
             delay: 0.1,
           }}
           >
-            <SubmitBtn /> 
+            <SubmitBtn />
+            <span className="ml-2 mr-2 font-normal text-white">or</span> 
             <a
               className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
               href="https://www.linkedin.com/in/rukys/"
@@ -105,12 +106,12 @@ export default function Contact() {
 
             <a
               className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-              href="https://github.com/rukys"
+              href="https://www.tiktok.com/@rukysektiawan"
               target="_blank"
               aria-label="Gihtub Ruky Sektiawan"
 
             >
-              <FaGithubSquare />
+              <FaTiktok />
             </a>
             <a
               className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
