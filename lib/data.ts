@@ -170,7 +170,6 @@ export const skillsData = [
   "PHP",
   "Laravel",
   "MySQL",
-  "Sentry",
   "Stallion",
 ] as const;
 
