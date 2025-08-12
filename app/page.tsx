@@ -19,3 +19,16 @@ export default function Home() {
     </main>
   );
 }
+
+const person = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Ruky Sektiawan",
+  jobTitle: "Mobile Developer",
+  url: "https://rukysektiawan.vercel.app",
+  sameAs: ["https://github.com/rukys", "https://www.linkedin.com/in/rukys/"],
+};
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }}
+/>;

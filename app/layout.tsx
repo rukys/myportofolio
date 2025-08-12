@@ -7,13 +7,28 @@ import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
 import { LanguageProvider } from "@/context/language-context";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Ruky Sektiawan | Personal Portfolio",
-  description: "Ruky Sektiawan is a frontend developer with 5 years+ of experience.",
+  metadataBase: new URL("https://rukysektiawan.vercel.app"),
+  title: {
+    default: "Ruky Sektiawan – Mobile Developer",
+    template: "%s · Ruky Sektiawan",
+  },
+  description:
+    "Mobile Developer & Frontend Engineer. 5+ years building React Native & Next.js apps.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "Ruky Sektiawan – Mobile Developer",
+    description: "Building fast, reliable apps with React Native & Next.js.",
+    url: "https://rukysektiawan.vercel.app",
+    siteName: "Ruky Sektiawan",
+    images: ["/og.jpg"],
+  },
+  twitter: { card: "summary_large_image" },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({

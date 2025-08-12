@@ -15,7 +15,7 @@ import { TYPHOGRAPHY } from "@/lib/data";
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
-  const {language} = useLanguageContext();
+  const { language } = useLanguageContext();
 
   return (
     <section
@@ -33,7 +33,6 @@ export default function Intro() {
               duration: 0.2,
             }}
           >
-            
             <Image
               src="/myphoto.webp"
               alt="Ricardo portrait"
@@ -66,16 +65,20 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        {language === 'EN' ? (
+        {language === "EN" ? (
           <>
-          <span className="font-bold" >Hello, I'm Ruky Sektiawan. </span>
-          <span className="font-normal">I'm a Mobile Developer Expertise </span>
-          <span className="font-normal">based in Bekasi</span>
+            <span className="font-bold">Hello, I'm Ruky Sektiawan. </span>
+            <span className="font-normal">
+              I'm a Mobile Developer & Frontend Engineer{" "}
+            </span>
+            <span className="font-normal">based in Bekasi</span>
           </>
-          ) : (
-            <>
+        ) : (
+          <>
             <span className="font-bold">Halo, saya Ruky Sektiawan. </span>
-            <span className="font-normal">Saya Seorang Mobile Developer Expert </span>
+            <span className="font-normal">
+              Saya Seorang Mobile Developer Expert{" "}
+            </span>
             <span className="font-normal">tinggal di Bekasi</span>
           </>
         )}
@@ -107,7 +110,7 @@ export default function Intro() {
           download
           aria-label="download cv ruky sektiawan"
         >
-          {language === 'EN' ? 'Download CV ' : 'Unduh CV '}
+          {language === "EN" ? "Download CV " : "Unduh CV "}
           <HiDownload className="transition opacity-60 group-hover:translate-y-1" />
         </a>
       </motion.div>
