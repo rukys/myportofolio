@@ -121,12 +121,12 @@ export const projectsData = [
     url: "https://play.google.com/store/apps/details?id=com.moviesdaily",
   },
   {
-    title: "My Doctor",
+    title: "Cinemagz",
     description:
-      "Application to consult your favorite doctor easily. this is a course app from BuildwithAngga with Fullstack React Native Developer course.",
-    tags: ["React Native", "Material Design", "Firebase", "Redux"],
+      "Cinemagz is a lightweight Android app for discovering movies. Browse what’s Popular, Top Rated, and Upcoming; open rich detail pages with synopsis, ratings, and full cast; search by title, genre, or actor; and save favorites to your personal watchlist—all in a clean, easy-to-use interface.",
+    tags: ["React Native", "Firebase", "Zustand", "React Query", "Tailwind"],
     imageUrl: mydoctor,
-    url: "https://play.google.com/store/apps/details?id=com.mydoctor.rukysektiawan",
+    url: "https://play.google.com/store/apps/details?id=com.cinemaxapp&hl=id",
   },
   {
     title: "Recipely",
@@ -146,9 +146,6 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "Java",
-  "Kotlin",
-  "Swift",
   "JavaScript",
   "TypeScript",
   "React Native",
@@ -162,6 +159,9 @@ export const skillsData = [
   "Tailwind",
   "Redux",
   "Zustand",
+  "Java",
+  "Kotlin",
+  "Swift",
   "Dart",
   "Flutter",
   "Bloc",
@@ -189,7 +189,7 @@ const EN = {
   CONTACT_ME: "Contact me here",
   ABOUT_ME: "About me",
   ABOUT_ME_DESC:
-  "I’m a mobile developer with over 5 years of experience crafting modern, scalable apps using React Native. I focus on building clean, responsive, and high-performance applications backed by solid tools like Zustand, Redux, Tailwind CSS, Firebase, Supabase, and MySQL. I’ve worked on various projects from logistics and membership apps to movie and recipe platforms—delivering both functionality and great user experience. I’m also comfortable working with React.js, Next.js, and Laravel for full-stack development. Always eager to learn and collaborate on meaningful projects. Let’s build something awesome together.",
+  "I’m a Mobile Developer with over 5 years of experience crafting modern, scalable apps using React Native. I focus on building clean, responsive, and high-performance applications backed by solid tools like Zustand, Redux, Tailwind CSS, Firebase, Supabase, and MySQL. I’ve worked on various projects from logistics and membership apps to movie and recipe platforms—delivering both functionality and great user experience. I’m also comfortable working with React.js, Next.js, and Laravel for full-stack development. Always eager to learn and collaborate on meaningful projects. Let’s build something awesome together.",
   MY_PROJECT: 'My Projects',
   PROJECT: {
     COURSE_DESC: 'Online course website offers easy access to a variety of courses. Users can learn through videos, readings, and exams on topics ranging from technical skills to soft skills.'

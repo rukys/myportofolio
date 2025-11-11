@@ -34,29 +34,16 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/myphoto.webp"
+              src="/myphoto.png"
               alt="Ricardo portrait"
               width="200"
               height="200"
               quality="100"
               priority={true}
-              className="h-48 w-48 mb-4 mt-2 rounded-full object-cover border-[0.20rem] border-white shadow-xl"
+              className="h-56 w-56 mb-4 mt-2 rounded-full object-cover border-[0.20rem] border-white shadow-xl"
+              style={{ objectPosition: "75% 25%" }}
             />
           </motion.div>
-
-          {/* <motion.span
-            className="absolute bottom-0 right-0 text-4xl"
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 125,
-              delay: 0.1,
-              duration: 0.7,
-            }}
-          >
-            👋
-          </motion.span> */}
         </div>
       </div>
 
