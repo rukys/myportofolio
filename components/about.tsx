@@ -25,7 +25,6 @@ export default function About() {
       </SectionHeading>
       <p className="mb-3">
         {TYPHOGRAPHY[language].ABOUT_ME_DESC}
-       
       </p>
     </motion.section>
   );

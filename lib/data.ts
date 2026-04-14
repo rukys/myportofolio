@@ -8,7 +8,9 @@ import movi from "@/public/images/image4.png";
 // import maca from "@/public/images/image5.png";
 import mydoctor from "@/public/images/image6.png";
 // import recipely from "@/public/images/image7.png";
-import recipelyApp from "@/public/images/image8.png";
+import recipelyApp from "@/public/images/image7.png";
+import project8 from "@/public/images/image8.png";
+import project9 from "@/public/images/image9.png";
 
 export const links = [
   {
@@ -143,6 +145,22 @@ export const projectsData = [
     imageUrl: recipelyApp,
     url: "https://play.google.com/store/apps/details?id=com.recipely",
   },
+  {
+    title: "Kukami",
+    description:
+      "Food delivery and courier platform built for speed and reliability. It features real-time tracking using Google Maps SDK, instant push notifications for order updates, and a seamless interface for an optimal delivery experience.",
+    tags: ["React Native", "Firebase", "Zustand", "Google Map SDK", "Tailwind", "React Hook Form"],
+    imageUrl: project8,
+    url: "#",
+  },
+  {
+    title: "Chateo",
+    description:
+      "Chateo is a real-time messaging application built with React Native, featuring end-to-end encryption, instant notifications, and a seamless user interface for secure communication.",
+    tags: ["React Native", "Tailwind", "Zustand", "React Query", "Firebase"],
+    imageUrl: project9,
+    url: "https://play.google.com/store/apps/details?id=com.chateoapp",
+  },
 ] as const;
 
 export const skillsData = [
@@ -167,17 +185,21 @@ export const skillsData = [
   "Bloc",
   "Provider",
   "Firebase",
+  "Supabase",
   "PHP",
   "Laravel",
   "MySQL",
+  "SQLite",
+  "GraphQL",
   "Stallion",
+  "Fastlane",
 ] as const;
 
 const ID = {
   CONTACT_ME: "Hubungi saya",
   ABOUT_ME: "Tentang Saya",
   ABOUT_ME_DESC:
-    "Sebagai seorang Frontend developer dengan pengalaman lebih dari 2 tahun, saya ahli dalam beberapa teknologi modern, termasuk React.js, Next.js, Vue.js, dan GraphQL. Saya juga mahir dalam TypeScript dan memiliki pengalaman dengan Jest untuk pengujian unit dan cypress untuk pengujian E2E. Saya bersemangat untuk menciptakan antarmuka yang ramah pengguna dan intuitif yang meningkatkan pengalaman pengguna. Saya selalu ingin mempelajari teknologi baru. Saat ini saya sedang mencari posisi penuh waktu sebagai Frontend Developer.",
+    "Saya adalah seorang Mobile Developer dengan pengalaman lebih dari 5 tahun dalam merancang dan mengembangkan aplikasi modern yang scalable, khususnya menggunakan React Native. Fokus utama saya adalah membangun aplikasi yang bersih, responsif, dan memiliki performa tinggi. Aplikasi tersebut didukung oleh teknologi solid seperti Zustand, Redux, Tailwind CSS, Firebase, Supabase, dan MySQL. Semasa karier saya, saya telah menangani berbagai jenis proyek. Beberapa di antaranya meliputi aplikasi logistik untuk kurir, sistem member e-commerce, hingga platform direktori film dan resep masakan. Semuanya bermuara pada satu tujuan, yaitu menciptakan fungsionalitas dan pengalaman pengguna yang luar biasa. Selain mobile development, saya juga handal sebagai full-stack developer memanfaatkan ekosistem React.js, Next.js, dan Laravel. Saya selalu menantang diri untuk belajar hal baru dan berkolaborasi di dalam proyek yang berdampak nyata. Mari berkolaborasi dan ciptakan sesuatu yang luar biasa bersama!",
   MY_PROJECT: 'Project Saya',
   PROJECT: {
     COURSE_DESC: 'Sebuah website kursus online menawarkan akses mudah ke berbagai kursus. Pengguna dapat belajar melalui video, bacaan, dan ujian tentang berbagai topik mulai dari keterampilan teknis hingga soft skill.'
@@ -189,7 +211,7 @@ const EN = {
   CONTACT_ME: "Contact me here",
   ABOUT_ME: "About me",
   ABOUT_ME_DESC:
-  "I’m a Mobile Developer with over 5 years of experience crafting modern, scalable apps using React Native. I focus on building clean, responsive, and high-performance applications backed by solid tools like Zustand, Redux, Tailwind CSS, Firebase, Supabase, and MySQL. I’ve worked on various projects from logistics and membership apps to movie and recipe platforms—delivering both functionality and great user experience. I’m also comfortable working with React.js, Next.js, and Laravel for full-stack development. Always eager to learn and collaborate on meaningful projects. Let’s build something awesome together.",
+    "I am a passionate Mobile Developer with over 5 years of experience crafting modern, scalable applications primarily using React Native. My core focus lies in building clean, responsive, and high-performance apps backed by robust tools like Zustand, Redux, Tailwind CSS, Firebase, Supabase, and MySQL. Throughout my career, I've successfully delivered a diverse range of projects. These include complex logistics applications, membership systems, and consumer-facing movie and recipe platforms. I always prioritize a seamless user experience in every app I build. Beyond mobile development, I am also highly comfortable working across the full stack leveraging React.js, Next.js, and Laravel. I'm constantly driven to learn new technologies and collaborate on meaningful projects. Let’s build something awesome together!",
   MY_PROJECT: 'My Projects',
   PROJECT: {
     COURSE_DESC: 'Online course website offers easy access to a variety of courses. Users can learn through videos, readings, and exams on topics ranging from technical skills to soft skills.'
