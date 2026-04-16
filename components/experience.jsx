@@ -38,35 +38,33 @@ const TimelineContent = () =>{
           key={index}
           contentStyle={{
             background:
-              theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
-            boxShadow: "none",
-            border: "1px solid rgba(0, 0, 0, 0.05)",
+              theme === "light" ? "rgba(255, 255, 255, 0.7)" : "rgba(255, 255, 255, 0.05)",
+            backdropFilter: "blur(10px)",
+            boxShadow: "0 10px 30px -10px rgba(0,0,0,0.1)",
+            border: theme === "light" ? "1px solid rgba(0, 0, 0, 0.05)" : "1px solid rgba(255, 255, 255, 0.1)",
             textAlign: "left",
             padding: "1.3rem 2rem",
+            borderRadius: "1rem",
           }}
           contentArrowStyle={{
             borderRight:
               theme === "light"
-                ? "0.4rem solid #9ca3af"
-                : "0.4rem solid rgba(255, 255, 255, 0.5)",
+                ? "0.4rem solid rgba(255, 255, 255, 0.7)"
+                : "0.4rem solid rgba(255, 255, 255, 0.05)",
           }}
           date={item.date}
           icon={item.icon}
           iconStyle={{
             background:
-              theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
+              theme === "light" ? "white" : "#1d2432",
+            boxShadow: "0 0 0 4px #fff, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05)",
             fontSize: "1.5rem",
           }}
         >
-          <h3 className="font-semibold capitalize">{item.title}</h3>
-          <p className="font-normal !mt-0">{item.location}</p>
-          <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+          <h3 className="font-bold text-xl">{item.title}</h3>
+          <p className="font-medium !mt-0 text-blue-600 dark:text-blue-400">{item.location}</p>
+          <p className="!mt-2 !font-light leading-relaxed text-gray-700 dark:text-white/75">
             {item.description}
-            {/* {item.description?.includes('worked') && (
-              <Link className="ml-1 text-white underline" href={"https://www.linkedin.com/in/rukys/"} target="_blank" rel="noreferrer">
-                see more
-              </Link>
-            )} */}
           </p>
         </VerticalTimelineElement>
       ))}

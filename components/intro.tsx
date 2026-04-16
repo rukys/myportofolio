@@ -54,17 +54,18 @@ export default function Intro() {
       >
         {language === "EN" ? (
           <>
-            <span className="font-bold">Hello, I'm Ruky Sektiawan. </span>
+            <span className="font-bold text-gradient">Hello, I'm Ruky Sektiawan. </span>
             <span className="font-normal">
-              I'm a Mobile Developer & Frontend Engineer{" "}
+              I'm a <span className="italic">Mobile Developer</span> &{" "}
+              <span className="italic">Frontend Engineer</span>{" "}
             </span>
             <span className="font-normal">based in Bekasi</span>
           </>
         ) : (
           <>
-            <span className="font-bold">Halo, saya Ruky Sektiawan. </span>
+            <span className="font-bold text-gradient">Halo, saya Ruky Sektiawan. </span>
             <span className="font-normal">
-              Saya Seorang Mobile Developer Expert{" "}
+              Saya Seorang <span className="italic">Mobile Developer Expert</span>{" "}
             </span>
             <span className="font-normal">tinggal di Bekasi</span>
           </>
@@ -81,7 +82,7 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="flex items-center gap-2 py-3 text-white transition bg-gray-900 rounded-full outline-none group px-7 focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105"
+          className="flex items-center gap-2 py-3 text-white transition-all bg-gray-900 rounded-full outline-none group px-7 focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 shadow-lg hover:shadow-xl dark:bg-white/10 dark:hover:bg-white/20"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
@@ -92,7 +93,7 @@ export default function Intro() {
         </Link>
 
         <a
-          className="flex items-center gap-2 py-3 transition bg-white rounded-full outline-none cursor-pointer group px-7 focus:scale-110 hover:scale-110 active:scale-105 borderBlack dark:bg-white/10"
+          className="flex items-center gap-2 py-3 transition-all bg-white rounded-full outline-none cursor-pointer group px-7 focus:scale-110 hover:scale-110 active:scale-105 borderBlack shadow-md hover:shadow-lg dark:bg-white/10"
           href="/cv-ruky-sektiawan.pdf"
           download
           aria-label="download cv ruky sektiawan"

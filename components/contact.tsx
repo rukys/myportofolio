@@ -94,7 +94,7 @@ export default function Contact() {
           }}
           >
             <SubmitBtn />
-            <span className="ml-2 mr-2 font-normal text-white">or</span> 
+            <span className="ml-2 mr-2 font-normal text-gray-700 dark:text-white/80">or</span> 
             <a
               className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
               href="https://www.linkedin.com/in/rukys/"

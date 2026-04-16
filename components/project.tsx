@@ -31,24 +31,29 @@ export default function Project({
         href={url}
         rel="noreferrer"
         target="_blank"
-        className="relative block h-auto transition bg-gray-100 border rounded-lg border-black/5 hover:bg-gray-200 dark:text-white dark:bg-white/10 dark:hover:bg-white/20"
+        className="relative block h-full transition-all duration-300 glass-container rounded-xl overflow-hidden hover:shadow-2xl hover:-translate-y-2 group"
       >
-        <div className="flex flex-col h-full px-5 pt-4 pb-7 sm:pt-10">
-          <Image
-            src={imageUrl}
-            alt="Project I worked on"
-            quality={100}
-            objectFit="cover"
-            className="w-full h-[300px] mb-5 rounded-lg shadow-2xl transition"
-          />
-          <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed h-[125px] overflow-hidden mb-5 text-gray-700 dark:text-white/70">
+        <div className="flex flex-col h-full px-5 pt-4 pb-7 sm:px-8 sm:pt-10">
+          <div className="overflow-hidden rounded-lg mb-6 shadow-md shadow-black/5">
+            <Image
+              src={imageUrl}
+              alt="Project I worked on"
+              quality={100}
+              className="w-full h-[300px] object-fill transition-transform duration-500 group-hover:scale-110"
+            />
+          </div>
+          
+          <h3 className="text-2xl font-bold tracking-tight mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+            {title}
+          </h3>
+          <p className="leading-relaxed h-[120px] overflow-y-auto pr-2 mb-6 text-gray-800/80 dark:text-white/70 font-light scrollbar-thin scrollbar-thumb-gray-300 dark:scrollbar-thumb-gray-700">
             {description}
           </p>
-          <ul className="flex flex-wrap gap-2 sm:mt-auto">
+          
+          <ul className="flex flex-wrap gap-2 mt-auto">
             {tags.map((tag, index) => (
               <li
-                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                className="bg-gray-900/[0.05] dark:bg-white/[0.1] px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-widest text-gray-800 dark:text-white/70 rounded-md border border-black/5 dark:border-white/5"
                 key={index}
               >
                 {tag}

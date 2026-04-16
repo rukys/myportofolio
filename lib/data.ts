@@ -11,6 +11,7 @@ import mydoctor from "@/public/images/image6.png";
 import recipelyApp from "@/public/images/image7.png";
 import project8 from "@/public/images/image8.png";
 import project9 from "@/public/images/image9.png";
+import project10 from "@/public/images/image10.png";
 
 export const links = [
   {
@@ -160,6 +161,14 @@ export const projectsData = [
     tags: ["React Native", "Tailwind", "Zustand", "React Query", "Firebase"],
     imageUrl: project9,
     url: "https://play.google.com/store/apps/details?id=com.chateoapp",
+  },
+  {
+    title: "MotoLog",
+    description:
+      "A smart service and maintenance tracker for motorcycle enthusiasts. It helps users manage their garage, track service history, and set precise maintenance reminders to keep their bikes in top condition.",
+    tags: ["React Native", "Zustand", "Tailwind", "Realm", "Local Notifications"],
+    imageUrl: project10,
+    url: "#",
   },
 ] as const;
 
