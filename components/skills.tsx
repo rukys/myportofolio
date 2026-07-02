@@ -2,7 +2,8 @@
 
 import React from "react";
 import SectionHeading from "./section-heading";
-import { skillsData } from "@/lib/data";
+import { skillsData, TYPHOGRAPHY } from "@/lib/data";
+import { useLanguageContext } from "@/context/language-context";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import { 
@@ -66,6 +67,7 @@ const fadeInAnimationVariants = {
 
 export default function Skills() {
   const { ref } = useSectionInView("Skills");
+  const { language } = useLanguageContext();
 
   return (
     <section
@@ -73,15 +75,20 @@ export default function Skills() {
       ref={ref}
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
     >
-      <SectionHeading>My skills</SectionHeading>
+      <SectionHeading>{TYPHOGRAPHY[language].MY_SKILLS}</SectionHeading>
       <ul className="flex flex-wrap justify-center gap-3 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li
-            className="flex items-center gap-2 px-5 py-3 glass-container rounded-xl dark:text-white/80 hover:scale-110 transition-transform cursor-default"
+            className="flex items-center gap-2 px-5 py-3 glass-container rounded-xl dark:text-white/80 cursor-default border border-transparent hover:border-indigo-500/20 dark:hover:border-indigo-400/25 transition-colors duration-300"
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
+            whileHover={{
+              scale: 1.08,
+              y: -4,
+              boxShadow: "0 15px 30px -10px rgba(0, 0, 0, 0.15)",
+            }}
             viewport={{
               once: true,
             }}

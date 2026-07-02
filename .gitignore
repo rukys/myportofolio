@@ -23,6 +23,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+yarn.lock
+.yarn
+.yarnrc.yml
 
 # local env files
 .env*.local
@@ -33,3 +36,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# agent
+.agent
+.agents

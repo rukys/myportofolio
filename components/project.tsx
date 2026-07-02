@@ -3,20 +3,22 @@
 import { useRef, useState } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
+import { useLanguageContext } from "@/context/language-context";
 
 type ProjectProps = (typeof projectsData)[number];
 
 export default function Project({
   title,
-  description,
+  descriptionEN,
+  descriptionID,
   tags,
   imageUrl,
   url,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
-  const [showGif, setShowGif] = useState(false);
+  const { language } = useLanguageContext();
 
   return (
     <motion.div
@@ -31,7 +33,7 @@ export default function Project({
         href={url}
         rel="noreferrer"
         target="_blank"
-        className="relative block h-full transition-all duration-300 glass-container rounded-xl overflow-hidden hover:shadow-2xl hover:-translate-y-2 group"
+        className="relative block h-full glass-container rounded-xl overflow-hidden hover-lift group"
       >
         <div className="flex flex-col h-full px-5 pt-4 pb-7 sm:px-8 sm:pt-10">
           <div className="overflow-hidden rounded-lg mb-6 shadow-md shadow-black/5">
@@ -47,7 +49,7 @@ export default function Project({
             {title}
           </h3>
           <p className="leading-relaxed h-[120px] overflow-y-auto pr-2 mb-6 text-gray-800/80 dark:text-white/70 font-light scrollbar-thin scrollbar-thumb-gray-300 dark:scrollbar-thumb-gray-700">
-            {description}
+            {language === "EN" ? descriptionEN : descriptionID}
           </p>
           
           <ul className="flex flex-wrap gap-2 mt-auto">

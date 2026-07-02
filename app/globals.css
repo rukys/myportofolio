@@ -2,12 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+:root {
+  --spring-duration: 0.6s;
+  --spring-easing: cubic-bezier(0.25, 1.25, 0.5, 1.1);
+  --smooth-duration: 0.4s;
+  --smooth-easing: cubic-bezier(0.16, 1, 0.3, 1);
   --line-color: #e5e7eb;
 }
 
-html.dark {
+.dark {
   --line-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Custom premium styles */
+.transition-spring {
+  transition: all var(--spring-duration) var(--spring-easing);
+}
+
+.transition-smooth {
+  transition: all var(--smooth-duration) var(--smooth-easing);
+}
+
+.hover-lift {
+  @apply transition-spring;
+}
+.hover-lift:hover {
+  transform: translateY(-6px) scale(1.015);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.15);
+}
+.dark .hover-lift:hover {
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
 }
 
 .borderBlack {

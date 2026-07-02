@@ -7,21 +7,18 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { experiencesData } from "@/lib/data";
+import { experiencesData, TYPHOGRAPHY } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
-import Link from "next/link";
-
-
-
+import { useLanguageContext } from "@/context/language-context";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
-  const { theme } = useTheme();
+  const { language } = useLanguageContext();
 
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
-      <SectionHeading>My experience</SectionHeading>
+      <SectionHeading>{TYPHOGRAPHY[language].MY_EXPERIENCE}</SectionHeading>
       <VerticalTimeline lineColor="">        
          <TimelineContent/>
       </VerticalTimeline>
@@ -30,7 +27,9 @@ export default function Experience() {
 }
 
 const TimelineContent = () =>{
-  const {theme} = useTheme();
+  const { theme } = useTheme();
+  const { language } = useLanguageContext();
+  
   return (
     <React.Fragment>
       {experiencesData.map((item, index) => (
@@ -52,7 +51,7 @@ const TimelineContent = () =>{
                 ? "0.4rem solid rgba(255, 255, 255, 0.7)"
                 : "0.4rem solid rgba(255, 255, 255, 0.05)",
           }}
-          date={item.date}
+          date={language === "EN" ? item.dateEN : item.dateID}
           icon={item.icon}
           iconStyle={{
             background:
@@ -61,10 +60,10 @@ const TimelineContent = () =>{
             fontSize: "1.5rem",
           }}
         >
-          <h3 className="font-bold text-xl">{item.title}</h3>
+          <h3 className="font-bold text-xl">{language === "EN" ? item.titleEN : item.titleID}</h3>
           <p className="font-medium !mt-0 text-blue-600 dark:text-blue-400">{item.location}</p>
           <p className="!mt-2 !font-light leading-relaxed text-gray-700 dark:text-white/75">
-            {item.description}
+            {language === "EN" ? item.descriptionEN : item.descriptionID}
           </p>
         </VerticalTimelineElement>
       ))}

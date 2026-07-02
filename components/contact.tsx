@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
@@ -14,8 +14,8 @@ import { TYPHOGRAPHY } from "@/lib/data";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
-
-  const {language} = useLanguageContext();
+  const { language } = useLanguageContext();
+  const [isSuccess, setIsSuccess] = useState(false);
 
   return (
     <motion.section
@@ -67,20 +67,24 @@ export default function Contact() {
           }
 
           toast.success("Email sent successfully!");
+          setIsSuccess(true);
+          setTimeout(() => {
+            setIsSuccess(false);
+          }, 4000);
         }}
       >
         <input
-          className="px-4 transition-all rounded-lg h-14 borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 dark:outline-none"
+          className="px-5 transition-all duration-300 rounded-xl h-14 bg-white/70 dark:bg-gray-950/40 border border-black/10 dark:border-white/10 focus:border-indigo-500 dark:focus:border-indigo-400 focus:bg-white dark:focus:bg-gray-950/80 outline-none shadow-sm focus:shadow-md focus:ring-2 focus:ring-indigo-500/20 dark:focus:ring-indigo-400/20 text-gray-900 dark:text-white"
           name="senderEmail"
           type="email"
           required
           maxLength={500}
-          placeholder="Your email"
+          placeholder={language === "EN" ? "Your email" : "Email Anda"}
         />
         <textarea
-          className="p-4 my-3 transition-all rounded-lg h-52 borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 dark:outline-none"
+          className="p-5 my-4 transition-all duration-300 rounded-xl h-52 bg-white/70 dark:bg-gray-950/40 border border-black/10 dark:border-white/10 focus:border-indigo-500 dark:focus:border-indigo-400 focus:bg-white dark:focus:bg-gray-950/80 outline-none shadow-sm focus:shadow-md focus:ring-2 focus:ring-indigo-500/20 dark:focus:ring-indigo-400/20 text-gray-900 dark:text-white resize-none"
           name="message"
-          placeholder="Your message"
+          placeholder={language === "EN" ? "Your message" : "Pesan Anda"}
           required
           maxLength={5000}
         />
@@ -93,7 +97,7 @@ export default function Contact() {
             delay: 0.1,
           }}
           >
-            <SubmitBtn />
+            <SubmitBtn isSuccess={isSuccess} />
             <span className="ml-2 mr-2 font-normal text-gray-700 dark:text-white/80">or</span> 
             <a
               className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
